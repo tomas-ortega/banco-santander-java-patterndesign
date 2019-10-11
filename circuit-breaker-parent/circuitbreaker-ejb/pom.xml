@@ -28,6 +28,10 @@
 		<artifactId>junit-jupiter-engine</artifactId>
 	</dependency>
 	
+	<dependency>
+		<groupId>org.mockito</groupId>
+		<artifactId>mockito-junit-jupiter</artifactId>
+	</dependency>
 	    
 	<dependency>
   		<groupId>com.santander.circuitbreaker</groupId>
@@ -44,7 +48,7 @@
   		<artifactId>javaee-api</artifactId>
   	</dependency>
   	
-  	
+  
   </dependencies>
 
   <build>

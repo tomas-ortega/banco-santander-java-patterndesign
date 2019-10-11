@@ -19,10 +19,14 @@ public class ClientEJB implements IClientLogic {
 	@Override
 	public ClientDTO searchClientById(String id) throws Exception {
 		Connection connectionReference = null;
+		ClientDTO clientFound = null;
 		
 		try {
-			return this.clientDAO.searchClientById(connectionReference, 
-												id);
+			clientFound = this.clientDAO.searchClientById(connectionReference, 
+													id);
+			clientFound.id = "asdf";
+			
+			return clientFound;
 		} catch(Exception exception) {
 			throw exception;
 		}
